@@ -1352,6 +1352,117 @@ EXPERIMENT 12 - CREATE A SIMPLE VISUAL BEAM WITH A AREA FILLED WIT A COLOR
 </body>
 </html>
 
+#php
+
+1.even
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Check Even or Odd</h2>
+
+<form method="post">
+    Enter a number:
+    <input type="number" name="num" required>
+    <input type="submit" value="Check">
+</form>
+
+<hr>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $n = $_POST["num"];   // Read number from form
+
+    if ($n % 2 == 0) {
+        echo "<h3>$n is Even</h3>";
+    } else {
+        echo "<h3>$n is Odd</h3>";
+    }
+}
+?>
+
+
+
+
+
+2.welcome
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Welcome";
+?>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+3.calculator
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<form method="post">
+    Enter First Number: <br>
+    <input type="number" name="num1" required><br><br>
+
+    Enter Second Number: <br>
+    <input type="number" name="num2" required><br><br>
+
+    Choose Operation: <br>
+    <select name="op">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="">Multiplication ()</option>
+        <option value="/">Division (/)</option>
+    </select>
+
+    <br><br>
+    <input type="submit" value="Calculate">
+</form>
+
+<hr>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $a = $_POST["num1"];
+    $b = $_POST["num2"];
+    $op = $_POST["op"];
+
+    echo "<h3>Result: </h3>";
+
+    if ($op == "+") {
+        echo $a + $b;
+    }
+    elseif ($op == "-") {
+        echo $a - $b;
+    }
+    elseif ($op == "*") {
+        echo $a * $b;
+    }
+    elseif ($op == "/") {
+        if ($b == 0) {
+            echo "Cannot divide by zero!";
+        } else {
+            echo $a / $b;
+        }
+    }
+}
+?>
+
+</body>
+</html>
+
 
 
 
