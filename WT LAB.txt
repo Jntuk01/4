@@ -1,0 +1,1358 @@
+EXPEIMENT 1
+
+
+
+1A)FLIPKART HOME PAGE:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipkart Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            margin: 0;
+        }
+        .menu {
+            background-color: #2874f0;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            margin: 20px;
+            background-color: #ddd;
+            height: 200px;
+            text-align: center;
+            color: #333;
+            line-height: 200px;
+            font-size: 24px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .footer {
+            background-color: #172337;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Fashion</a>
+        <a href="#">Electronics</a>
+        <a href="#">Cart</a>
+    </div>
+
+    <div class="banner">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4MInt1bw2HlgWtdHk7lJkA1qWV4_yU76DLg&s" alt="Banner Image" style="width:100%; height:200px; object-fit: cover;">
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <p><b>book 1</b></p>
+            <p>₹111</p>
+        </div>
+        <div class="product">
+            <p><b>book 2</b></p>
+            <p>₹21,299</p>
+        </div>
+        <div class="product">
+            <p><b>book 3</b></p>
+            <p>₹2,799</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Flipkart Clone / Contact / Terms / Help
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+1B)REGISTRATION AND USER LOGIN:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login & Register</title>
+  <style>
+    body { font-family: Arial; background: #eef; text-align: center; }
+    .box { width: 280px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 10px; }
+    input { width: 90%; margin: 8px 0; padding: 8px; }
+    input[type=submit] { background: #2874f0; color: #fff; border: none; }
+    a { color: #2874f0; text-decoration: none; display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+    <a href="#register">New user? Register</a>
+  </div>
+
+  <div class="box" id="register">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <input type="submit" value="Register">
+    </form>
+    <a href="#login">Already registered? Login</a>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+1C)USER PROFILE PAGE:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Page</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f1f3f6;
+      text-align: center;
+      padding: 40px;
+    }
+    .profile-box {
+      background-color: white;
+      width: 300px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #2874f0;
+    }
+    p {
+      text-align: left;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-box">
+    <h2>User Profile</h2>
+    <p><strong>Name:</strong> Our Name</p>
+    <p><strong>Email:</strong> user@example.com</p>
+    <p><strong>Username:</strong> pass123</p>
+    <p><strong>Address:</strong> Hyderabad, India</p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+1D)BOOK CATALOG/BOOKS STORE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books Catalog - Online Book Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: #2874f0;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .book {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .book img {
+      width: 120px;
+      height: 170px;
+      border-radius: 3px;
+    }
+    .book-title {
+      font-size: 16px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .price {
+      color: green;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Books Catalog</h1>
+  </div>
+
+  <div class="book-grid">
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UY327_FMwebp_QL65_.jpg" alt="The Alchemist">
+      <div class="book-title">The Alchemist</div>
+      <div class="price">₹399</div>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UY327_FMwebp_QL65_.jpg" alt="Atomic Habits">
+      <div class="book-title">Atomic Habits</div>
+      <div class="price">₹499</div>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81MQzX8aC-L._AC_UY327_FMwebp_QL65_.jpg" alt="Wings of Fire">
+      <div class="book-title">Wings of Fire</div>
+      <div class="price">₹299</div>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UY327_FMwebp_QL65_.jpg" alt="Harry Potter">
+      <div class="book-title">Harry Potter</div>
+      <div class="price">₹599</div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+1E)SHOPPING CART:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+    .header {
+      background: #2874f0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .cart {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Shopping Cart</h1>
+  </div>
+
+  <div class="cart">
+    <table>
+      <tr>
+        <th>Book</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>The Alchemist</td>
+        <td>₹399</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Atomic Habits</td>
+        <td>₹499</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <div class="total">Total: ₹1397</div>
+  </div>
+</body>
+</html>
+
+
+
+
+1F)PAYMENT BY CREDIT CARD/STATIC PAYMENT PAGE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e2e2e2;
+      padding: 40px;
+    }
+    .payment-form {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      background: #2874f0;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-form">
+    <h2>Credit Card Payment</h2>
+    <form>
+      <label>Cardholder Name</label>
+      <input type="text" placeholder="Enter name" required>
+
+      <label>Card Number</label>
+      <input type="number" placeholder="1111 2222 3333 4444" required>
+
+      <label>Expiry Date</label>
+      <input type="text" placeholder="MM/YY" required>
+
+      <label>CVV</label>
+      <input type="number" placeholder="123" required>
+
+      <button class="btn">Pay ₹1397</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+1G)ORDER CONFIRMATION:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3fff3;
+      text-align: center;
+      padding: 50px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .box h1 {
+      color: green;
+    }
+    .box p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>✅ Order Confirmed!</h1>
+    <p>Thank you for your purchase.</p>
+    <p>Your order will be delivered within 3-5 business days.</p>
+    <p><strong>Order ID:</strong> #12345678</p>
+  </div>
+</body>
+</html>
+
+
+
+
+EXPERIMRNT 2 -TO CREATE AND SAVE ON XML DOCUMENT ON LINE SERVER WHICHTAKE USER ID AS I/P ANND RETURNS USER DETILS BY TAKING USER INFO FROM XML DOCUMENT
+
+
+
+
+CREATE.PHP:
+
+<?php
+$xml = new SimpleXMLElement('<users></users>');
+
+for ($i = 1; $i <= 10; $i++) {
+    $user = $xml->addChild('user');
+    $user->addChild('id', $i);
+    $user->addChild('name', 'User' . $i);
+    $user->addChild('email', 'user' . $i . '@example.com');
+    $user->addChild('phone', '123456789' . $i);
+}
+
+$xml->asXML('users.xml');
+echo "XML file created successfully.";
+?>
+
+
+EXECUTE.PHP:
+
+<?php
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    $xml = simplexml_load_file('users.xml');
+
+    $found = false;
+
+    foreach ($xml->user as $user) {
+        if ((string)$user->id == $id) {
+
+            echo "<h2>User Details</h2>";
+            echo "ID: " . $user->id . "<br>";
+            echo "Name: " . $user->name . "<br>";
+            echo "Email: " . $user->email . "<br>";
+            echo "Phone: " . $user->phone . "<br>";
+            $found = true;
+            break;
+        }
+    }
+
+    if (!$found) {
+        echo "User with ID $id not found.";
+    }
+} else {
+?>
+    <form method="get">
+        <label for="id">Enter User ID (1–10):</label>
+        <input type="number" name="id" id="id" required>
+        <input type="submit" value="Search">
+    </form>
+<?php
+}
+?>
+
+
+
+
+EXPERIMENT 3 - PHP SCRIPT TO MERGE AND SORT ARRAYS
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merge and Sort Arrays</title>
+</head>
+<body>
+    <h2>Enter Two Arrays</h2>
+    <form method="post">
+        Array 1 (comma separated): <input type="text" name="array1" required><br><br>
+        Array 2 (comma separated): <input type="text" name="array2" required><br><br>
+        <input type="submit" value="Merge & Sort">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get input from user
+        $array1 = explode(",", $_POST["array1"]);
+        $array2 = explode(",", $_POST["array2"]);
+
+        // Convert strings to numbers and trim spaces
+        $array1 = array_map('intval', array_map('trim', $array1));
+        $array2 = array_map('intval', array_map('trim', $array2));
+
+        // Merge arrays
+        $mergedArray = array_merge($array1, $array2);
+
+        // Sort numerically
+        sort($mergedArray, SORT_NUMERIC);
+
+        // Print result without indexes
+        echo "<h3>Merged and Sorted Array:</h3>";
+        echo implode(" ", $mergedArray);
+    }
+    ?>
+</body>
+</html>
+
+
+
+
+EXPERIMENT 4 - PHP SCRIPT THAT READS DATA FROMONE FILE AND WRITE INTO ANOTHER FILE 
+
+
+<?php
+
+$sourcefile = readline("Enter source file name: ");
+$destinationfile = readline("Enter destination file name: ");
+
+if (!file_exists($sourcefile)) {
+    die("Source file '$sourcefile' does not exist!\n");
+}
+
+$data = file_get_contents($sourcefile);
+
+if ($data === false) {
+    die("Error reading from '$sourcefile'\n");
+}
+
+$result = file_put_contents($destinationfile, $data);
+
+if ($result === false) {
+    die("Error writing to '$destinationfile'\n");
+}
+
+echo "Data copied successfully from '$sourcefile' to '$destinationfile'\n";
+
+?>
+
+
+
+EXPERIMENT 5 - PHP SCRIPT TO PRINT PRIME NUMBERS 
+
+
+<?php
+function isPrime($num) {
+    if ($num <= 1) {
+        return false;
+    }
+    for ($i = 2; $i <= sqrt($num); $i++) {
+        if ($num % $i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function printPrimes($start, $end) {
+    echo "Prime numbers between $start and $end are:<br>";
+    for ($i = $start; $i <= $end; $i++) {
+        if (isPrime($i)) {
+            echo $i . " ";
+        }
+    }
+    echo "<br>";
+}
+?>
+
+<form method="post">
+    Start: <input type="number" name="start" required>
+    End: <input type="number" name="end" required>
+    <input type="submit" value="Show Primes">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $start = (int) $_POST["start"];
+    $end = (int) $_POST["end"];
+    printPrimes($start, $end);
+}
+?>
+
+
+
+
+EXPERIMENT 6 - TO VALIDATE THE REGISTRATION,USER LOGIN,USER PROFILE AND PAYMENT BY CREDIT CARD PAGES USING JAVASCRIPT
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Hub Forms</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav button {
+      margin-right: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .form-section {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+    .form-section.active {
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 12px 0;
+    }
+    input[type=submit] {
+      width: auto;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .profile-data {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 6px;
+    }
+h1{
+color:blue;
+}
+body{
+background-color:grey;
+}
+  </style>
+ 
+  <script>
+    let registeredUser = {}; // store user details temporarily
+
+    // Navigation
+    function showForm(id) {
+      document.querySelectorAll('.form-section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+
+      // auto load profile if chosen
+      if (id === "profile") {
+        displayProfile();
+      }
+    }
+
+    // Registration Validation
+    function validateRegistration() {
+      let name = document.getElementById("reg-name").value.trim();
+      let email = document.getElementById("reg-email").value.trim();
+      let password = document.getElementById("reg-password").value;
+      let confirm = document.getElementById("reg-confirm").value;
+
+      if (name === "") {
+        alert("Name is required!");
+        return false;
+      }
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        alert("Enter a valid email address!");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters!");
+        return false;
+      }
+      if (password !== confirm) {
+        alert("Passwords do not match!");
+        return false;
+      }
+
+      // Save registered user
+      registeredUser = { name, email, password };
+      alert("Registration Successful! Now you can login.");
+      showForm("login");
+      return false;
+    }
+
+    // Login Validation
+    function validateLogin() {
+      let email = document.getElementById("login-email").value.trim();
+      let password = document.getElementById("login-password").value;
+
+      if (email === "" || password === "") {
+        alert("Email and Password are required!");
+        return false;
+      }
+      if (registeredUser.email !== email || registeredUser.password !== password) {
+        alert("Invalid credentials!");
+        return false;
+      }
+      alert("Login Successful!");
+      showForm("profile");
+      return false;
+    }
+
+    // Profile Display
+    function displayProfile() {
+      if (!registeredUser.name) {
+        document.getElementById("profile-info").innerHTML = "<p>No user logged in.</p>";
+        return;
+      }
+      document.getElementById("profile-info").innerHTML = `
+        <div class="profile-data">
+          <p><b>Name:</b> ${registeredUser.name}</p>
+          <p><b>Email:</b> ${registeredUser.email}</p>
+        </div>
+      `;
+    }
+
+    // Payment Validation
+    function validatePayment() {
+      let card = document.getElementById("pay-card").value.trim();
+      let expiry = document.getElementById("pay-expiry").value.trim();
+      let cvv = document.getElementById("pay-cvv").value.trim();
+
+      let cardPattern = /^[0-9]{16}$/;
+      if (!card.match(cardPattern)) {
+        alert("Enter a valid 16-digit card number!");
+        return false;
+      }
+
+      let expiryPattern = /^(0[1-9]|1[0-2])\/\d{2}$/; // MM/YY
+      if (!expiry.match(expiryPattern)) {
+        alert("Enter expiry in MM/YY format!");
+        return false;
+      }
+
+      let cvvPattern = /^[0-9]{3}$/;
+      if (!cvv.match(cvvPattern)) {
+        alert("Enter a valid 3-digit CVV!");
+        return false;
+      }
+
+      alert("Payment Successful!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+
+  <h1>User Portal</h1>
+  <nav>
+    <button onclick="showForm('registration')">Registration</button>
+    <button onclick="showForm('login')">Login</button>
+    <button onclick="showForm('profile')">Profile</button>
+    <button onclick="showForm('payment')">Payment</button>
+  </nav>
+
+  <!-- Registration Form -->
+  <div id="registration" class="form-section active">
+    <h2>Registration</h2>
+    <form onsubmit="return validateRegistration()">
+      <input type="text" id="reg-name" placeholder="Full Name">
+      <input type="text" id="reg-email" placeholder="Email">
+      <input type="password" id="reg-password" placeholder="Password">
+      <input type="password" id="reg-confirm" placeholder="Confirm Password">
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+  <!-- Login Form -->
+  <div id="login" class="form-section">
+    <h2>User Login</h2>
+    <form onsubmit="return validateLogin()">
+      <input type="text" id="login-email" placeholder="Email">
+      <input type="password" id="login-password" placeholder="Password">
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <!-- Profile View -->
+  <div id="profile" class="form-section">
+    <h2>User Profile</h2>
+    <div id="profile-info"></div>
+  </div>
+
+  <!-- Payment Form -->
+  <div id="payment" class="form-section">
+    <h2>Credit Card Payment</h2>
+    <form onsubmit="return validatePayment()">
+      <input type="text" id="pay-card" placeholder="Card Number (16 digits)">
+      <input type="text" id="pay-expiry" placeholder="Expiry (MM/YY)">
+      <input type="password" id="pay-cvv" placeholder="CVV (3 digits)">
+      <input type="submit" value="Pay Now">
+    </form>
+  </div>
+
+</body>
+</html>
+
+
+
+
+EXPERIMENT 7 - PHP SCRIPT FOR STRING OPERATIONS - LENGTH,COUNT NO OF WORDS,REVERSE OF A STRING AND SEACH FOR A SPECIFIC STRING
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Operations in PHP</title>
+</head>
+<body>
+
+<h2>String Operations</h2>
+
+<form method="post">
+    Enter a string: <input type="text" name="userstring" required><br><br>
+    Enter word to search: <input type="text" name="searchword" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $str = $_POST['userstring'];
+    $search = $_POST['searchword'];
+
+    echo "<h3>Results:</h3>";
+
+    echo "<b>a. Length of string:</b> " . strlen($str) . "<br>";
+    echo "<b>b. Number of words:</b> " . str_word_count($str) . "<br>";
+    echo "<b>c. Reverse of string:</b> " . strrev($str) . "<br>";
+
+    $pos = strpos($str, $search);
+    if ($pos !== false) {
+        echo "<b>d. The word '$search' found at position:</b> $pos<br>";
+    } else {
+        echo "<b>d. The word '$search' was not found in the string.</b><br>";
+    }
+}
+?>
+
+</body>
+</html>
+
+
+EXPERIMENT 10 - WRITE A JAVA PROGRAM/SERVLET/JSP TO CONNECT TO DATABASE WITH VARIOUS SQL QUERIES - CREATE A TABLE WHICH SHOULD CONTAIN FIELDS : NAME,PASSWORD,EMAIL ID,PHN NO
+
+
+
+import java.sql.*;
+import java.util.Scanner;
+
+public class JDBCUserOperations {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/web_lab"; // Database name: web_lab
+        String user = "root"; // Default MySQL username in XAMPP
+        String password = ""; // Empty password (since phpMyAdmin opens without password)
+
+        Scanner sc = new Scanner(System.in);
+        Connection con = null;
+
+        try {
+            // Step 1: Load JDBC driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // Step 2: Establish connection
+            con = DriverManager.getConnection(url, user, password);
+            System.out.println("✅ Connected to MySQL database successfully!");
+
+            // Step 3: Create 'users' table if not exists
+            String createTable = """
+                CREATE TABLE IF NOT EXISTS users (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    name VARCHAR(50) NOT NULL,
+                    password VARCHAR(50) NOT NULL,
+                    email VARCHAR(100) UNIQUE NOT NULL,
+                    phone VARCHAR(15)
+                )
+            """;
+            try (Statement st = con.createStatement()) {
+                st.executeUpdate(createTable);
+            }
+
+            // Menu-driven program
+            while (true) {
+                System.out.println("\n===== USER DATABASE MENU =====");
+                System.out.println("1. Register new user");
+                System.out.println("2. View all users");
+                System.out.println("3. Search user by name");
+                System.out.println("4. Update user phone number");
+                System.out.println("5. Delete user by email");
+                System.out.println("6. Exit");
+                System.out.print("Enter your choice: ");
+                int choice = sc.nextInt();
+                sc.nextLine(); // consume newline
+
+                switch (choice) {
+                    case 1:
+                        System.out.print("Enter Name: ");
+                        String name = sc.nextLine();
+                        System.out.print("Enter Password: ");
+                        String pass = sc.nextLine();
+                        System.out.print("Enter Email: ");
+                        String email = sc.nextLine();
+                        System.out.print("Enter Phone Number: ");
+                        String phone = sc.nextLine();
+
+                        String insertQuery = "INSERT INTO users (name, password, email, phone) VALUES (?, ?, ?, ?)";
+                        try (PreparedStatement ps = con.prepareStatement(insertQuery)) {
+                            ps.setString(1, name);
+                            ps.setString(2, pass);
+                            ps.setString(3, email);
+                            ps.setString(4, phone);
+                            ps.executeUpdate();
+                            System.out.println("✅ User registered successfully!");
+                        }
+                        break;
+
+                    case 2:
+                        String selectQuery = "SELECT * FROM users";
+                        try (Statement st = con.createStatement();
+                             ResultSet rs = st.executeQuery(selectQuery)) {
+                            System.out.println("\n--- Registered Users ---");
+                            System.out.printf("%-5s %-15s %-25s %-15s%n", "ID", "Name", "Email", "Phone");
+                            System.out.println("-----------------------------------------------------------");
+                            while (rs.next()) {
+                                System.out.printf("%-5d %-15s %-25s %-15s%n",
+                                        rs.getInt("id"),
+                                        rs.getString("name"),
+                                        rs.getString("email"),
+                                        rs.getString("phone"));
+                            }
+                        }
+                        break;
+
+                    case 3:
+                        System.out.print("Enter name to search: ");
+                        String searchName = sc.nextLine();
+                        String searchQuery = "SELECT * FROM users WHERE name LIKE ?";
+                        try (PreparedStatement ps = con.prepareStatement(searchQuery)) {
+                            ps.setString(1, "%" + searchName + "%");
+                            ResultSet rs = ps.executeQuery();
+                            boolean found = false;
+                            while (rs.next()) {
+                                if (!found) {
+                                    System.out.println("\n--- Search Results ---");
+                                    System.out.printf("%-5s %-15s %-25s %-15s%n", "ID", "Name", "Email", "Phone");
+                                    System.out.println("-----------------------------------------------------------");
+                                    found = true;
+                                }
+                                System.out.printf("%-5d %-15s %-25s %-15s%n",
+                                        rs.getInt("id"),
+                                        rs.getString("name"),
+                                        rs.getString("email"),
+                                        rs.getString("phone"));
+                            }
+                            if (!found) System.out.println("❌ No user found with name: " + searchName);
+                        }
+                        break;
+
+                    case 4:
+                        System.out.print("Enter email of user to update: ");
+                        String updateEmail = sc.nextLine();
+                        System.out.print("Enter new phone number: ");
+                        String newPhone = sc.nextLine();
+
+                        String updateQuery = "UPDATE users SET phone=? WHERE email=?";
+                        try (PreparedStatement ps = con.prepareStatement(updateQuery)) {
+                            ps.setString(1, newPhone);
+                            ps.setString(2, updateEmail);
+                            int rows = ps.executeUpdate();
+                            if (rows > 0)
+                                System.out.println("✅ Phone number updated successfully!");
+                            else
+                                System.out.println("❌ No user found with that email.");
+                        }
+                        break;
+
+                    case 5:
+                        System.out.print("Enter email of user to delete: ");
+                        String deleteEmail = sc.nextLine();
+                        String deleteQuery = "DELETE FROM users WHERE email=?";
+                        try (PreparedStatement ps = con.prepareStatement(deleteQuery)) {
+                            ps.setString(1, deleteEmail);
+                            int rows = ps.executeUpdate();
+                            if (rows > 0)
+                                System.out.println("✅ User deleted successfully!");
+                            else
+                                System.out.println("❌ No user found with that email.");
+                        }
+                        break;
+
+                    case 6:
+                        System.out.println("👋 Exiting program...");
+                        sc.close();
+                        con.close();
+                        System.exit(0);
+
+                    default:
+                        System.out.println("⚠ Invalid choice! Try again.");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+
+
+EXPEIMENT 11 - Write a JSP which does the following job:
+Insert the details of the 3 or 4 users who register with the web site (week9) by using registration form. Authenticate the user when he submits the login form using the user name and password from the database.
+
+
+
+
+register.jsp:
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Online Book Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <main>
+      <h2>User Registration</h2>
+      <!-- Form sends data to register_action.jsp using POST method -->
+      <form action="register_action.jsp" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Register">
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Book Store</p>
+    </footer>
+  </div>
+
+</body>
+</html>
+
+register_action.jsp:
+
+<%@ page import="java.sql.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f2f2f2; text-align: center; padding: 50px; }
+        .success { color: green; }
+        .error { color: red; }
+        a { text-decoration: none; color: #444; }
+    </style>
+</head>
+<body>
+
+<%
+    // Get form data
+    String username = request.getParameter("fullname");
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+
+    if(username != null && email != null && password != null){
+        Connection conn = null;
+        PreparedStatement pst = null;
+
+        try {
+            // Load MySQL JDBC Driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            // Connect to database (change user/password if needed)
+            String dbURL = "jdbc:mysql://localhost:3306/bookstore_db";
+            String dbUser = "root";
+            String dbPass = "";
+            conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
+
+            // Insert data into users table
+            String sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, username);
+            pst.setString(2, email);
+            pst.setString(3, password);
+
+            int row = pst.executeUpdate();
+
+            if(row > 0){
+%>
+                <h2 class="success">Registration Successful!</h2>
+                <p>Welcome, <%= username %>!</p>
+                <p><a href="login.jsp">Click here to login</a></p>
+<%
+            } else {
+%>
+                <h2 class="error">Registration Failed!</h2>
+                <p>Please try again.</p>
+<%
+            }
+        } catch(Exception e){
+%>
+            <h2 class="error">Error: <%= e.getMessage() %></h2>
+<%
+        } finally {
+            if(pst != null) try { pst.close(); } catch(Exception e){}
+            if(conn != null) try { conn.close(); } catch(Exception e){}
+        }
+    } else {
+%>
+    <h2 class="error">All fields are required!</h2>
+<%
+    }
+%>
+
+</body>
+</html>
+
+
+login.jsp:
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Online Book Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <main>
+      <h2>User Login</h2>
+      <form action="login_action.jsp" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Online Book Store</p>
+    </footer>
+  </div>
+
+</body>
+</html>
+
+login_action.jsp:
+
+<%@ page import="java.sql.*" %>
+<%@ page import="javax.servlet.http.*" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+
+    String url = "jdbc:mysql://localhost:3306/bookstore_db";
+    String dbUser = "root"; // XAMPP default user
+    String dbPass = "";     // XAMPP default password
+
+    try {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection(url, dbUser, dbPass);
+
+        String sql = "SELECT * FROM users WHERE email=? AND password=?";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ps.setString(1, email);
+        ps.setString(2, password);
+
+        ResultSet rs = ps.executeQuery();
+
+        if(rs.next()) {
+            // Store user info in session
+            HttpSession sessionObj = request.getSession();
+            sessionObj.setAttribute("username", rs.getString("username"));
+            sessionObj.setAttribute("email", rs.getString("email"));
+
+            // Redirect to profile page
+            response.sendRedirect("profile.jsp");
+        } else {
+            out.println("<h3 style='color:red;text-align:center;'>Invalid Email or Password!</h3>");
+            out.println("<p style='text-align:center;'><a href='login.jsp'>Try Again</a></p>");
+        }
+
+        rs.close();
+        ps.close();
+        con.close();
+
+    } catch(Exception e) {
+        out.println("Error: " + e.getMessage());
+    }
+%>
+
+profile.jsp:
+
+<%@ page import="javax.servlet.http.*" %>
+<%
+    HttpSession sessionObj = request.getSession(false);
+    if (sessionObj == null || sessionObj.getAttribute("username") == null) {
+        response.sendRedirect("login.jsp");
+        return;
+    }
+
+    String username = (String) sessionObj.getAttribute("username");
+    String email = (String) sessionObj.getAttribute("email");
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <main class="profile-container">
+    <h2>User Profile</h2>
+    <div class="info">
+      <p><strong>Name:</strong> <%= username %></p>
+      <p><strong>Email:</strong> <%= email %></p>
+      
+    </div>
+
+    <hr>
+
+    <div class="buttons">
+      <button>Edit Profile</button>
+      <button>Change Password</button>
+      <form action="logout.jsp" method="post" style="display:inline;">
+        <button type="submit">Logout</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
+
+
+EXPERIMENT 12 - CREATE A SIMPLE VISUAL BEAM WITH A AREA FILLED WIT A COLOR
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Visual Bean</title>
+<style>
+  #bean {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+</style>
+</head>
+<body>
+
+<div id="bean"></div>
+
+<script>
+  let shape = true;
+
+  const bean = document.getElementById('bean');
+
+  function getRandomColor() {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  }
+
+  function updateBean() {
+    bean.style.backgroundColor = getRandomColor();
+    bean.style.borderRadius = shape ? '0%' : '50%';
+  }
+
+  updateBean();
+
+  bean.addEventListener('click', () => {
+    shape = !shape;
+    updateBean();
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
