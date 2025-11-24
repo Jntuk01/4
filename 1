@@ -1,0 +1,49 @@
+#12.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #bean{
+    width:150px;height:150px;margin:50px auto;cursor:pointer;
+    transition:0.3s;
+  }
+</style>
+</head>
+<body>
+
+<div id="bean"></div>
+
+<script>
+const b = document.getElementById("bean");
+const rnd = n => Math.floor(Math.random()*n);
+
+function update(){
+  b.style.background = `hsl(${rnd(360)},80%,60%)`;
+  b.style.borderRadius = rnd(2) ? "50%" : "0%";
+  let s = 100 + rnd(150);   // size between 100–250px
+  b.style.width = s+"px";
+  b.style.height = s+"px";
+}
+
+update();
+b.onclick = update;
+</script>
+
+</body>
+</html>
+
+
+
+
+#10
+
+javac -cp ".;mysql-connector-j-9.4.0.jar" JDBCUserOperations.java
+java -cp ".;mysql-connector-j-9.4.0.jar" JDBCUserOperations
+
+
+
+
+
+
+
+
